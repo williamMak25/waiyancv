@@ -29,9 +29,9 @@ export const Projects = () => {
         <div className='bg-violet-900 grid grid-cols-3 gap-4 items-center p-5 max-[415px]:grid max-[415px]:grid-cols-1'>
 
 
-          <a href='https://re-modified-vercel-shop-app.vercel.app/' className='shadow' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
+          <div className='' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
           <p className='text-white text-center mb-2'>Ecommerce App</p>
-            <div className='w-full bg-white h-52 text-center rounded-lg p-2 border border-zinc-900 relative shadow'>
+            <div className='w-full bg-white h-52 text-center rounded-lg p-2 border border-zinc-900 relative shadow mb-2'>
               <div className='flex flex-row'>
                 <img src={laptop} className='w-1/2  '/>
                 <img src={phone} className='w-1/2  '/>
@@ -42,11 +42,15 @@ export const Projects = () => {
                   <p>Ecommerce fully responsive App with Reactjs,BootStrap and firebase authentication.For state management I'm using Redux/toolkit</p>
               </div>
             </div>
-          </a>
+            <a href='https://github.com/williamMak25/ReModified__VercelShop__App/tree/main'><i className="bi bi-github text-white mx-3 text-xl"></i></a>
+            <a href='https://re-modified-vercel-shop-app.vercel.app/'><i className="bi bi-box-arrow-up-right text-white mx-3 text-xl"></i></a>
+          </div>
 
-          <a href='https://movie-project-sooty-seven.vercel.app/' className='shadow' data-aos={(window.screen.width <= 414) ? 'fade-left' : 'fade-up' }>
+          
+          <div className='' data-aos={(window.screen.width <= 414) ? 'fade-left' : 'fade-up' }>
           <p className='text-white text-center mb-2'>Movie IMDB</p>
-            <div className='w-full h-52 text-center rounded-lg p-2 relative'
+          
+            <div className='w-full h-52 text-center rounded-lg p-2 relative mb-2'
                 style={{backgroundImage:`url(${movie})`,
                         backgroundPosition:'center',
                         backgroundSize:'cover',
@@ -57,11 +61,14 @@ export const Projects = () => {
                   <p>IMDB App with Reactjs(This is not responsive)</p>
               </div>
             </div>
-          </a>
+            <a href='https://github.com/williamMak25/Movie-project/tree/main'><i className="bi bi-github text-white m-3 text-xl"></i></a>
+            <a href='https://movie-project-sooty-seven.vercel.app/'><i className="bi bi-box-arrow-up-right text-white m-3 text-xl"></i></a>
+          </div>
+         
 
-          <a href='https://recipe-app-six-sable.vercel.app/' className='shadow' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
+          <div className='' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
             <p className='text-white text-center mb-2'>Recipe App</p>
-            <div className='w-full bg-neutral-200 h-52 text-center rounded-lg p-2 border border-zinc-900 relative shadow'
+            <div className='w-full bg-neutral-200 h-52 text-center rounded-lg p-2 border border-zinc-900 relative shadow mb-2'
                 style={{backgroundImage:`url(${recipe})`,
                         backgroundPosition:'center',
                         backgroundSize:'cover',
@@ -73,11 +80,13 @@ export const Projects = () => {
                   <p>Showing any recipe you type and what can u do with these to get meal or dessert.</p>
               </div>
             </div>
-          </a>
+            <a href='https://github.com/williamMak25/Recipe-APP/tree/main'><i className="bi bi-github text-white m-3 text-xl"></i></a>
+            <a href='https://recipe-app-six-sable.vercel.app/'><i className="bi bi-box-arrow-up-right text-white m-3 text-xl"></i></a>
+          </div>
 
-          <a href='https://connet-app.vercel.app/' className='shadow' data-aos={(window.screen.width <= 414) ? 'fade-left' : 'fade-up' }>
+          <div className='' data-aos={(window.screen.width <= 414) ? 'fade-left' : 'fade-up' }>
             <p className='text-white text-center mb-2'>ConNet SocialApp</p>
-            <div className='w-full bg-neutral-800 h-52 text-center text-white rounded-lg p-2 relative shadow'
+            <div className='w-full bg-neutral-800 h-52 text-center text-white rounded-lg p-2 relative shadow mb-2'
             style={{backgroundImage:`url(${social})`,
                         backgroundPosition:'center',
                         backgroundSize:'cover',
@@ -91,11 +100,13 @@ export const Projects = () => {
                      In these app you can post,comment and chat with registered people.</p>
               </div>
             </div>
-          </a>
+            <a href='https://github.com/williamMak25/Social-App/tree/master'><i className="bi bi-github text-white m-3 text-xl"></i></a>
+            <a href='https://connet-app.vercel.app/'><i className="bi bi-box-arrow-up-right text-white m-3 text-xl"></i></a>
+          </div>
 
-          <a href='https://daily-weather-app-teal.vercel.app/' className='shadow' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
+          <div className='' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
             <p className='text-white text-center mb-2'>DailyWeather</p>
-            <div className='w-full bg-white h-52 text-center rounded-lg p-2  relative shadow'
+            <div className='w-full bg-white h-52 text-center rounded-lg p-2  relative shadow mb-2'
             style={{backgroundImage:`url(${weather})`,
                         backgroundPosition:'center',
                         backgroundSize:'cover',
@@ -108,7 +119,9 @@ export const Projects = () => {
                     Or any location you search.And also use ipInfo api to know  your  device current location.</p>
               </div>
             </div>
-          </a>
+            <a href='https://github.com/williamMak25/DailyWeatherApp/tree/master'><i className="bi bi-github text-white m-3 text-xl "></i></a>
+            <a href='https://daily-weather-app-teal.vercel.app/'><i className="bi bi-box-arrow-up-right text-white m-3 text-xl"></i></a>
+          </div>
 
         </div>
       </div>
