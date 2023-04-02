@@ -20,13 +20,12 @@ export const Projects = () => {
   console.log( window.screen.width)
   return (
     <div className=' p-5 mt-5 bg-violet-900 w-full' id='projects'>
-      <div className=' mt-[-100px] bg-violet-900 flex flex-col justify-center items-center p-3'>
-        <img src={programmer} alt='programmer' className='w-32 h-32'/>
+      <div className=' mt-[-100px] bg-violet-900 flex flex-col justify-center items-center p-3 rounded'>
+        <img src={programmer} alt='programmer' className='w-32 h-32 mt-14'/>
         <h1 className='text-center text-2xl p-3 text-green-300'> P R O J E C T S</h1>
-        <p className='mt-0'>------------------------------------------------------</p>
-       
-        
-        <div className='bg-violet-900 grid grid-cols-3 gap-4 items-center p-5 max-[415px]:grid max-[415px]:grid-cols-1'>
+        <p className='mt-0 text-white'>------------------------------------------------------------------------------------------</p>
+            
+        <div className='bg-violet- grid grid-cols-3 gap-4 items-center mt-3 p-5 max-[415px]:grid max-[460px]:grid-cols-1'>
 
 
           <div className='' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
@@ -125,7 +124,7 @@ export const Projects = () => {
 
         </div>
       </div>
-       
+       <hr/>
     </div>
   )
 }

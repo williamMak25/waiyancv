@@ -5,8 +5,9 @@ import { AboutMe } from './aboutMe';
 import { Footer } from './footer';
 import { Projects } from './project';
 import { Skill } from './skill';
+import { Header } from './header';
 
-export const Home = () => {
+export const Home = ({isMenuOpen,setIsMenuOpen}) => {
   useEffect(() => {
     Aos.init({
       duration: 1000
@@ -14,6 +15,7 @@ export const Home = () => {
   }, [])
   return (
     <>
+    <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
     <div className='flex flex-col justify-between items-center p-3 m-0 pb-0
                     max-[395px]:text-sm max-[395px]:p-0 max-[395px]:h-screen max-[395px]:justify-center max-[395px]:w' >
         <h1 className='text-6xl text-center my-5 py-2 px-3 rounded-3xl hover:bg-violet-900 hover:text-white
