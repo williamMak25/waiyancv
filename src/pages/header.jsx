@@ -39,7 +39,7 @@ export const Header = ({isMenuOpen,setIsMenuOpen}) => {
         <div className='sideBarInfo bg-violet-500'>
           <img src={menu}/> 
           <li className='list-none m-3'onClick={handleClick}><NavLink to="/" className='no-underline text-dark'>Home</NavLink></li>
-          <li className='list-none m-3'onClick={handleClick}><NavLink to='/projects' className='no-underline text-dark'>Projects</NavLink></li>
+          <li className='list-none m-3'onClick={handleClick}><a href='#projects' className='no-underline text-dark'>Projects</a></li>
           <li className='list-none m-3'onClick={handleClick}><NavLink to="/contact" className='no-underline text-dark'>Contact Me</NavLink></li>
         </div>
       </div>

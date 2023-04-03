@@ -9,9 +9,9 @@ export const Skill = () => {
         })
     },[])
   return (
-    <div className='h-full px-5 '>
+    <div className='px-5 '>
         <div className='flex flex-col items-center bg-white mt-[-100px] p-5 max-[395px]:p-1'>
-            <img src={computer} alt='computer'className='w-20 rounded'/>
+            <img src={computer} alt='computer'className='w-20 rounded mt-3'/>
             <h2 className='text-3xl my-5 text-violet-900'>Frontend Developer</h2>
             <p className='text-center px-3'data-aos="fade-bottom">I start this carrer from the first of 2022 and learning from beginning level. I have skills of HTML, CSS, JavaScript
                 for Frontend. And then I start learning React Framwork for reducing working time and more effecient in work.I

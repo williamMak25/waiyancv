@@ -7,8 +7,6 @@ import social from '../image/social.png'
 import weather from '../image/weather.jpg'
 import programmer from '../image/programmer.png'
 import '../App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSheetPlastic } from '@fortawesome/free-solid-svg-icons';
 import Aos from 'aos';
 
 export const Projects = () => {
@@ -19,17 +17,19 @@ export const Projects = () => {
   },[])
   console.log( window.screen.width)
   return (
-    <div className='mt-5 bg-violet-900 w-full mb-0' id='projects'>
-      <div className='mb-0 mt-[-100px] bg-violet-900 flex flex-col justify-center items-center p-3 rounded'>
-        <img src={programmer} alt='programmer' className='w-32 h-32 mt-14'/>
-        <h1 className='text-center text-2xl p-3 text-green-300'> P R O J E C T S</h1>
-        <p className='mt-0 text-white text-center'>------------------------------------------------------------------------------------------</p>
+    <>
+    <div className='mt-5 bg-violet-900 mb-0 p-5' id='projects'>
+      <div className='mb-0 mt-[-80px] bg-violet-900 flex flex-col justify-center items-center p-3 rounded'>
+
+        <div className='flex flex-col items-center'>
+          <img src={programmer} alt='programmer' className='w-32 h-32 mt-14'/>
+          <h1 className='text-center text-xl p-3 text-white underline underline-offset-8'>These are my recent PROJECTS</h1>
+        </div>
             
         <div className='bg-violet- grid grid-cols-3 gap-4 items-center mt-3 p-5 max-[415px]:grid max-[460px]:grid-cols-1'>
 
-
           <div className='' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
-          <p className='text-white text-center mb-2'>Ecommerce App</p>
+            <p className='text-green-300 text-center mb-2'>Ecommerce App</p>
             <div className='w-full bg-white h-52 text-center rounded-lg p-2 border border-zinc-900 relative shadow mb-2'>
               <div className='flex flex-row'>
                 <img src={laptop} className='w-1/2'/>
@@ -47,7 +47,7 @@ export const Projects = () => {
 
           
           <div className='' data-aos={(window.screen.width <= 414) ? 'fade-left' : 'fade-up' }>
-          <p className='text-white text-center mb-2'>Movie IMDB</p>
+          <p className='text-green-300 text-center mb-2'>Movie IMDB</p>
           
             <div className='w-full h-52 text-center rounded-lg p-2 relative mb-2'
                 style={{backgroundImage:`url(${movie})`,
@@ -66,7 +66,7 @@ export const Projects = () => {
          
 
           <div className='' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
-            <p className='text-white text-center mb-2'>Recipe App</p>
+            <p className='text-green-300 text-center mb-2'>Recipe App</p>
             <div className='w-full bg-neutral-200 h-52 text-center rounded-lg p-2 border border-zinc-900 relative shadow mb-2'
                 style={{backgroundImage:`url(${recipe})`,
                         backgroundPosition:'center',
@@ -84,7 +84,7 @@ export const Projects = () => {
           </div>
 
           <div className='' data-aos={(window.screen.width <= 414) ? 'fade-left' : 'fade-up' }>
-            <p className='text-white text-center mb-2'>ConNet SocialApp</p>
+            <p className='text-green-300 text-center mb-2'>ConNet SocialApp</p>
             <div className='w-full bg-neutral-800 h-52 text-center text-white rounded-lg p-2 relative shadow mb-2'
             style={{backgroundImage:`url(${social})`,
                         backgroundPosition:'center',
@@ -104,7 +104,7 @@ export const Projects = () => {
           </div>
 
           <div className='' data-aos={(window.screen.width <= 414) ? 'fade-right' : 'fade-up' }>
-            <p className='text-white text-center mb-2'>DailyWeather</p>
+            <p className='text-green-300 text-center mb-2'>DailyWeather</p>
             <div className='w-full bg-white h-52 text-center rounded-lg p-2  relative shadow mb-2'
             style={{backgroundImage:`url(${weather})`,
                         backgroundPosition:'center',
@@ -125,5 +125,6 @@ export const Projects = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
