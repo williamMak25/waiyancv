@@ -10,12 +10,12 @@ export const AboutMe = () => {
   }, [])
   return (
     <>
-    <img src={code} alt='codephoto' className='mb-0 w-96 h-72 mx-auto max-[395px]:w-52 max-[395px]:h-36 max-[395px]:mt-[-50px] '/>
-    <div className='flex flex-col items-center bg-violet-900 text-white p-14 h-screen m-0 text-center
-                    max-[395px]:py-0 '>
-        <img src={aboutme} className='max-[395px]:w-32 max-[395px]:h-32 w-40 h-40'/>
+    <img src={code} alt='codephoto' className='mb-0 w-96 h-72 mx-auto max-[395px]:w-52 max-[395px]:h-36 max-[395px]:mt'/>
+    <div className='w-full flex flex-col items-center p-0 bg-violet-900 text-white p-14 h-screen m-0 text-center
+                    max-[620px]:py-0 max-[620px]:m-0 '>
+        <img src={aboutme} className='max-[395px]:w-32 max-[395px]:h-32 w-40 h-40 mt-4'/>
         <h2 className='text-xl text-center mt-10 my-2 max-[395px]:text-xl' data-aos='fade-down'> Nice to meet you. I'm <span className='text-yellow-300 text-3xl max-[395px]:block'>Wai Yan Win Lwin.</span></h2>
-        <p className='w-3/4 text-center mt-5 text-lg font-thin leading-9 max-[395px]:text-sm ' data-aos='zoom-in'>I am skilled Front-End Developer in creating responsive and user-friendly web
+        <p className='text-center mt-5 text-lg font-thin leading-9 m-5 max-[395px]:text-sm max-[395px]:m-3' data-aos='zoom-in'>I am skilled Front-End Developer in creating responsive and user-friendly web
             applications. My expertise includes developing websites using HTML, CSS, JavaScript, and front-end frameworks
             such as React. In addition to my technical skills, I am a team player with excellent communication skills.</p>
        

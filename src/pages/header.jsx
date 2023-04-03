@@ -24,8 +24,8 @@ export const Header = ({isMenuOpen,setIsMenuOpen}) => {
  }
   return (
     <>
-    <nav className='flex z-20 flex-row list-none justify-between items-end p-2 m-0 max-[780px]:hidden max-[414px]:p-0'>
-        <div className='mx-28 my-2'>
+    <nav className='flex z-20 flex-row list-none justify-between items- p-2 m-0 max-[414px]:p-0 max-[480px]:hidden'>
+      <div className='mx-28 my-2'>
             <NavLink to='/'><img src={Logo}alt='logo' className='w-12 h-12 text-violet-900'/></NavLink>
         </div>
         <div className='mx-28 my-2'>
@@ -44,6 +44,7 @@ export const Header = ({isMenuOpen,setIsMenuOpen}) => {
         </div>
       </div>
     </div>
+    
     
     </>
   

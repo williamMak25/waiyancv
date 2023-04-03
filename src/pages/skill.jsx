@@ -9,7 +9,7 @@ export const Skill = () => {
         })
     },[])
   return (
-    <div className='h-full px-5 max-[395px]:px-0'>
+    <div className='h-full px-5 '>
         <div className='flex flex-col items-center bg-white mt-[-100px] p-5 max-[395px]:p-1'>
             <img src={computer} alt='computer'className='w-20 rounded'/>
             <h2 className='text-3xl my-5 text-violet-900'>Frontend Developer</h2>

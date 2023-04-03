@@ -19,11 +19,11 @@ export const Projects = () => {
   },[])
   console.log( window.screen.width)
   return (
-    <div className=' p-5 mt-5 bg-violet-900 w-full' id='projects'>
-      <div className=' mt-[-100px] bg-violet-900 flex flex-col justify-center items-center p-3 rounded'>
+    <div className='mt-5 bg-violet-900 w-full mb-0' id='projects'>
+      <div className='mb-0 mt-[-100px] bg-violet-900 flex flex-col justify-center items-center p-3 rounded'>
         <img src={programmer} alt='programmer' className='w-32 h-32 mt-14'/>
         <h1 className='text-center text-2xl p-3 text-green-300'> P R O J E C T S</h1>
-        <p className='mt-0 text-white'>------------------------------------------------------------------------------------------</p>
+        <p className='mt-0 text-white text-center'>------------------------------------------------------------------------------------------</p>
             
         <div className='bg-violet- grid grid-cols-3 gap-4 items-center mt-3 p-5 max-[415px]:grid max-[460px]:grid-cols-1'>
 
@@ -32,8 +32,8 @@ export const Projects = () => {
           <p className='text-white text-center mb-2'>Ecommerce App</p>
             <div className='w-full bg-white h-52 text-center rounded-lg p-2 border border-zinc-900 relative shadow mb-2'>
               <div className='flex flex-row'>
-                <img src={laptop} className='w-1/2  '/>
-                <img src={phone} className='w-1/2  '/>
+                <img src={laptop} className='w-1/2'/>
+                <img src={phone} className='w-1/2'/>
               </div>
               <p>vercelShop.com</p>
               <div className='absolute top-0 left-0 w-full h-full text-center rounded-lg p-5 items-center hidden-div hover:backdrop-blur'>
@@ -124,7 +124,6 @@ export const Projects = () => {
 
         </div>
       </div>
-       <hr/>
     </div>
   )
 }
