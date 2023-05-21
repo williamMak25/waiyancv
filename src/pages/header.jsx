@@ -33,9 +33,9 @@ export const Header = ({isMenuOpen,setIsMenuOpen}) => {
             border border-violet-900 hover:bg-violet-900 hover:text-white'>Contact Me</button></NavLink>
         </div>
     </nav>
-    <div className='sticky top-0 left-0 overflow-hidden z-10 p-2 min-[780px]:hidden'>
-      <FontAwesomeIcon icon={faBars} className='w-12 h-10 text-yellow-400 z-40' onClick={handleClick}/>
-      <div className={menuClass}> 
+    <div className='sticky top-0 left-0 overflow-hidden z-10 p-2 w-full min-[780px]:hidden'>
+      <FontAwesomeIcon icon={faBars} className='w-12 h-10 text-yellow-400 z-20' onClick={handleClick}/>
+      <div className={`w-full ${menuClass} z-40`}> 
         <div className='sideBarInfo bg-violet-500'>
           <img src={menu}/> 
           <li className='list-none m-3'onClick={handleClick}><NavLink to="/" className='no-underline text-dark'>Home</NavLink></li>
