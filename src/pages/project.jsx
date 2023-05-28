@@ -53,7 +53,7 @@ export const Projects = () => {
                 style={{backgroundImage:`url(${movie})`,
                         backgroundPosition:'center',
                         backgroundSize:'cover',
-                        opacity: 0.8}}>
+                        opacity:1 }}>
             
               <div className='absolute top-0 left-0 w-full h-full text-amber-500 text-center rounded-lg p-5 hidden-div hover:backdrop-blur'>
                   <p className='mt-5 mb-2'>MovieIMDB</p>
@@ -71,7 +71,7 @@ export const Projects = () => {
                 style={{backgroundImage:`url(${recipe})`,
                         backgroundPosition:'center',
                         backgroundSize:'cover',
-                        opacity: 0.8}}>
+                        opacity: 1}}>
             
            
               <div className='absolute top-0 left-0 w-full h-full text-center rounded-lg p-5 items-center hidden-div hover:backdrop-blur'>
@@ -89,7 +89,7 @@ export const Projects = () => {
             style={{backgroundImage:`url(${social})`,
                         backgroundPosition:'center',
                         backgroundSize:'cover',
-                        opacity: 0.8}}>
+                        opacity: 1}}>
             
          
               
@@ -109,7 +109,7 @@ export const Projects = () => {
             style={{backgroundImage:`url(${weather})`,
                         backgroundPosition:'center',
                         backgroundSize:'cover',
-                        opacity: 0.8}}>
+                        opacity: 1}}>
             
               
               <div className='absolute top-0 left-0 w-full h-full text-center rounded-lg p-5 items-center hidden-div hover:backdrop-blur'>
